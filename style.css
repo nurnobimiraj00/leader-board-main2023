@@ -1,0 +1,153 @@
+body {
+    background-color: #f3f1ff;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/* top section  */
+.top-section>h1,
+.bottom-section>h1 {
+    margin-top: 33px;
+    margin-left: 33px;
+    margin-bottom: 40px;
+    color: #444cfe;
+}
+
+.top-section, .bottom-section {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+    border-radius: 5px;
+    width: 1200px;
+    /* width: 60%; */
+    margin-top: 25px;
+
+}
+
+/* top players  */
+
+.top-players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 30px;
+
+}
+
+.player>img {
+    height: 56px;
+    width: 56px;
+}
+
+.player {
+    display: flex;
+    gap: 16px;
+}
+
+hr {
+    width: 90%;
+    color: #d1d1d1;
+    margin-top: 44px;
+    margin-bottom: 30px;
+}
+
+/* top blog */
+.top-blog {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.blog {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    /* border: 2px solid red; */
+
+}
+
+.blog img {
+    /* width: 220px; */
+    width: 80%;
+    height: 127px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.blog h3 {
+    color: #000;
+    font-size: 20px;
+    font-family: Poppins;
+    font-weight: 700;
+    line-height: 34px;
+}
+
+.blog p {
+    color: #562EFF;
+}
+
+span {
+    color: #9F9F9F;
+
+}
+
+/* top section end  */
+/* 
+.bottom-section {
+    margin-top: 25px    ;
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+    border-radius: 5px;
+    width: 1200px;
+
+} */
+
+.courses {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.box {
+    width: 255px;
+    /* height: 270px; */
+    margin-left: 28px;
+    margin-bottom: 25px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 5px 5px 10px 0px gainsboro;
+}
+
+.box p {
+    color: #ED6B4F;
+    font-size: 14.691px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.boximg {
+    width: 240px;
+
+}
+
+.boximg img {
+    width: 80%;
+}
+
+/* responsive style  */
+ 
+@media screen and (max-width:688px) {
+    .top-section, .bottom-section{
+        width: 100%;
+       
+    }
+    .top-players , .top-blog, .courses{
+         grid-template-columns: repeat(1, 1fr);
+         grid-row-gap: 10px;
+    }
+
+}
+
+.hide{
+    display: none;
+}
