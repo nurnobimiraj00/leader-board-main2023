@@ -144,10 +144,34 @@ span {
     .top-players , .top-blog, .courses{
          grid-template-columns: repeat(1, 1fr);
          grid-row-gap: 10px;
+         
+    }
+    .courses{
+        justify-content: center;
     }
 
 }
+@media screen and (min-width:689px) and (max-width:992px) {
+    .top-section, .bottom-section{
+        width: 100%;
+       
+    }
+    .top-players , .top-blog, .courses{
+         grid-template-columns: repeat(2, 1fr);
+         grid-row-gap: 10px;
+         
+    }
+    .courses{
+        justify-content: center;
+    }
 
-.hide{
-    display: none;
 }
+@media screen and (min-width:993px) and (max-width:1312px) {
+    .top-section, .bottom-section{
+        width: 100%;
+       
+    }
+    
+
+}
+
